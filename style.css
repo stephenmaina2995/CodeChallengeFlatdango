@@ -1,0 +1,15 @@
+*{
+margin: 0;
+padding: 0;
+user-select: none;
+box-sizing: border-box;
+font-family: 'Fire Sans',sans-serif;
+}
+.app{
+    display: flex;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background: #1b1b1b;
+}
