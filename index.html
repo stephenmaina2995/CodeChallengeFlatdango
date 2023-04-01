@@ -9,24 +9,124 @@
 <body>
     <h1>Flatdango</h1>
     <div class="app">
-        <!-- <button>BUY TICKET</button> -->
-        <ol>
-            <li><a>The Giant Gila Monster</a></li>
-            <li><a>Manos: The Hands Of Fate</a></li>
-            <li><a>Time Chasers</a></li>
-            <li><a>The Touch Of Satan</a></li>
-            <li><a>Santa Claus Conquers The Martians</a></li>
-            <li><a>Track Of The Moon Beast</a></li>
-            <li><a>The Skydivers</a></li>
-            <li><a>The Killer Shrews</a></li>
-            <li><a>Project Moon Base</a></li>
-            <li><a>The Giant Spider Invasion</a></li>
-            <li><a>Catalina Caper</a></li>
-            <li><a>Secret Agent Super Dragon</a></li>
-            <li><a>Wild Rebels</a></li>
-            <li><a>Danger: Diabolik</a></li>
-            <li><a>Village Of The Giants</a></li>
-        </ol>
+
+<aside class="sidebar">
+
+        <h2>App</h2>
+       
+        <nav>
+            <ul>
+            <li><a href="#">The Giant Gila Monster</a></li>
+            <li><a href="#">Manos: The Hands Of Fate</a></li>
+            <li><a href="#">Time Chasers</a></li>
+            <li><a href="#">The Touch Of Satan</a></li>
+            <li><a href="#">Santa Claus Conquers The Martians</a></li>
+            <li><a href="#">Track Of The Moon Beast</a></li>
+            <li><a href="#">The Skydivers</a></li>
+            <li><a href="#">The Killer Shrews</a></li>
+            <li><a href="#">Project Moon Base</a></li>
+            <li><a href="#">The Giant Spider Invasion</a></li>
+            <li><a href="#">Catalina Caper</a></li>
+            <li><a href="#">Secret Agent Super Dragon</a></li>
+            <li><a href="#">Wild Rebels</a></li>
+            <li><a href="#">Danger: Diabolik</a></li>
+            <li><a href="#">Village Of The Giants</a></li>
+        </ul>
+    </nav>    
+    </aside>
     </div>
+     this container is for displaying the posters of the movies. 
+    <div id="availableMovies">
+
+
+    </div><br>
+    <button>BUY TICKET</button>
+    <script src="./script.js"></script>
 </body>
-</html>
+</html> 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>My Movies</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<h1>My Movies</h1>
+	<button onclick="movies()">Get Movies</button>
+	<div>
+		<label for="availableMovies">Available Movies:</label>
+		<select id="availableMovies"></select>
+	</div>
+	<div>
+		<label for="movieId">Movie ID:</label>
+		<input type="text" id="movieId">
+	</div>
+	<div>
+		<label for="movieTitle">Title:</label>
+		<input type="text" id="movieTitle">
+	</div>
+	<div>
+		<label for="movieRuntime">Runtime:</label>
+		<input type="text" id="movieRuntime">
+	</div>
+	<div>
+		<label for="movieCapacity">Capacity:</label>
+		<input type="text" id="movieCapacity">
+	</div>
+	<div>
+		<label for="movieShowtime">Showtime:</label>
+		<input type="text" id="movieShowtime">
+	</div>
+	<div>
+		<label for="movieTicketsSold">Tickets Sold:</label>
+		<input type="text" id="movieTicketsSold">
+	</div>
+	<div>
+		<label for="movieDescription">Description:</label>
+		<textarea id="movieDescription"></textarea>
+	</div>
+	<div>
+		<label for="moviePoster">Poster URL:</label>
+		<input type="text" id="moviePoster">
+	</div>
+	<div>
+		<label for="movieShowingId">Showing ID:</label>
+		<input type="text" id="movieShowingId">
+	</div>
+    <script>
+
+function movies() {
+			fetch("http://localhost:3000/films")
+				.then(res => res.json())
+				.then(data => {
+					console.log(data);
+					// do something with the data here
+					let moviesData = data;
+
+					for (let i = 0; i < moviesData.length; i++) {
+						console.log(moviesData[i].tickets_sold);
+
+						// use # to select an element by ID
+						let movieId = document.querySelector("#movieId");
+						let availableMovies = document.querySelector("#availableMovies");
+						let movieTitle = document.querySelector("#movieTitle");
+						let movieRuntime = document.querySelector("#movieRuntime");
+						let movieCapacity = document.querySelector("#movieCapacity");
+						let movieShowtime = document.querySelector("#movieShowtime");
+						let movieTicketsSold = document.querySelector("#movieTicketsSold");
+						let movieDescription = document.querySelector("#movieDescription");
+						let moviePoster = document.querySelector("#moviePoster");
+						let movieShowingId = document.querySelector("#movieShowingId");
+
+						// define the availableMovies function outside of the loop
+						function availableMovies() {
+							let availableMovies = document.querySelector("#availableMovies").value;
+							document.querySelector("#availableMovies").innerHTML = availableMovies;
+						}
+					}
+				});
+		}
+
+    </script>
+</body>
+</html> -->
