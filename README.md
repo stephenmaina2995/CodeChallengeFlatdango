@@ -6,7 +6,7 @@ The application uses a patch for the fetch api. The patch method enables the dat
 to persist. The app also uses preventDefault() to ensure the page does not refresh when 
 loadeed. The application also appends the data fetched from the json server as a list.
 
-##Licence
+##  Licence
 MIT License
 
 Copyright (c) 2023 stephenmaina2995
